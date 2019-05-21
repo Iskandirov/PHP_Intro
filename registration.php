@@ -1,8 +1,13 @@
 <?php include("script.php") ?>
 <?php include_once("header.php") ?>
-
-<h1>Вхід на сайт</h1>
+<?php include("upload.php")?>
+<h1>Реєстрація на сайт</h1>
 <form method="post">
+
+<input type="file" class="btn btn-warning" id="i_file" value=""> 
+<button type="button" id="i_submit" class="btn btn-warning">Upload</button>
+<img id="img" src="" width="200" style="display:none;" />
+
     <?php  if(count($error)>0) { ?>
     <div class="alert alert-danger" role="alert">
         Дані вказані не коректно!
@@ -21,7 +26,7 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit"  class="btn btn-primary">Submit</button>
 </form>
-<!-- filereader();  -->
+
 <?php include_once("footer.php") ?>
