@@ -15,6 +15,9 @@
         <a class="nav-link" href="/registration.php">Реєстрація на сайт</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="/jsupload.php">Upload</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#">Pricing</a>
       </li>
       <li class="nav-item">

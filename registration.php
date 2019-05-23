@@ -1,18 +1,15 @@
 <?php include("script.php") ?>
 <?php include_once("header.php") ?>
-<?php include("upload.php")?>
 <h1>Реєстрація на сайт</h1>
 <form method="post">
-
-<input type="file" class="btn btn-warning" id="i_file" value=""> 
-<button type="button" id="i_submit" class="btn btn-warning">Upload</button>
-<img id="img" src="" width="200" style="display:none;" />
 
     <?php  if(count($error)>0) { ?>
     <div class="alert alert-danger" role="alert">
         Дані вказані не коректно!
     </div>
     <?php } ?>
+
+    
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input type="text" class="form-control <?php echo $is_valid_email ? "" : "is-invalid"; ?>" name="txtEmail" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
